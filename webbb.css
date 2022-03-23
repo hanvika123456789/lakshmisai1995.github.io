@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,red,red);
+    }
+nav{
+    width:80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    
+   
+    flex-basis: 20%;
+
+}  
+h1{
+    color: black;
+    margin-top: 10px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+}  
+.mobile{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.middle{
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    
+}
+.contain:hover  .mobile{
+    opacity: 0.3;
+    
+}
+.contain:hover .middle{
+    opacity: 1;
+}
+.text{
+    background-color: red;
+    color: black;
+    font-size: 16px;
+    padding: 100px,32px;
+    text-align: justify;
+}
+
+.infomation{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+}
+.features{
+    position: absolute;
+    display: flex;
+    color: black;
+}
+.features div{
+    margin-left: 30px;
+}
+.features div p{
+    margin-top: 8px;
+}
+
+.one{
+    top: 380px;
+left: 550px;
+    
+    
+}
+.two{
+    top: 380px;
+    left: 850px;
+    transform: rotate(360deg);
+      
+}
+.three{
+    top: 550px;
+    left: 550px;
+     transform: rotate(360deg);
+     
+}
+.four{
+    top: 550px;
+    left: 850px;
+    transform: rotate(360deg);
+}
+.processor{
+    width:50px;
+    height:60px;
+}
+.battery{
+    width: 50px;
+    height: 60px;
+}
+.display{
+    width:50px;
+    height:60px;
+}
+.camera{
+    width: 50px;
+    height: 60px;
+}
+
+
